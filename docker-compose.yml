@@ -8,6 +8,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "./config/traefik.yml:/traefik.yml"
-      - "./letsencrypt/acme.json:/acme.json"
+      - "/var/lib/docker/volumes/portainer_data/_data/config/traefik.yml:/traefik.yml"
+      - "/var/lib/docker/volumes/portainer_data/_data/letsencrypt/acme.json:/acme.json"
       - /var/run/docker.sock:/var/run/docker.sock
